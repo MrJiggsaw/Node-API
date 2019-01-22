@@ -7,7 +7,7 @@ const cors = require('cors');
 
 
 mongoose.connect(
-	"mongodb://node-shop:node-shop@cluster0-shard-00-00-bui2o.mongodb.net:27017,cluster0-shard-00-01-bui2o.mongodb.net:27017,cluster0-shard-00-02-bui2o.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true" , 
+	"mongodb+srv://node-shop:node-shop@cluster0-bui2o.mongodb.net/test?retryWrites=true" , 
 	{
 		useNewUrlParser : true,
 		useCreateIndex : true
