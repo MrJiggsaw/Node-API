@@ -28,7 +28,7 @@ router.post('/', (req , res ,next) => {
 router.patch('/:orderId', (req , res ,next) => {
 	const id  = req.params.orderId;
 	Orders.update({_id : id} , {$set : {quantity : req.body.quantity}}).then((result) => {
-		return res.status(200).send("Successfully deleted");
+		return res.status(200).send("Successfully updated");
 	}).catch((err) => {
 		return res.status(400).send("Failed deletion");
 	});
